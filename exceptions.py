@@ -1,7 +1,7 @@
 while True:
     try:
         favNum = int(input("What's your favourite number?\n"))
-        print(1/favNum)
+        print(1 / favNum)
         break
     except ValueError:
         print("Make sure and enter a number")
