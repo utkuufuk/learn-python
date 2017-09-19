@@ -1,6 +1,3 @@
-# Learn Python
-Quick reference for Python 3 syntax.
-
 ## Contents
  * [Basics](hello.py)
  * [Lists & Tuples](lists_tuples.py)
@@ -18,3 +15,5 @@ Quick reference for Python 3 syntax.
     * [File Dowonloader](example_programs/file_downloader.py)
     * [Web Crawler](example_programs/web_crawler.py)
     * [Word Frequency Counter](example_programs/word_freq_counter.py)
+ * Libraries
+    * [Matplotlib](libraries/simple.py)
