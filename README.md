@@ -1,4 +1,4 @@
-## Contents
+# Contents
  * [Basics](hello.py)
  * [Lists & Tuples](lists_tuples.py)
  * [Conditions & Loops](conditions_loops.py)
@@ -16,4 +16,5 @@
     * [Web Crawler](example_programs/web_crawler.py)
     * [Word Frequency Counter](example_programs/word_freq_counter.py)
  * Libraries
-    * [Matplotlib](libraries/simple.py)
+    * [Matplotlib](libraries/matplotlib/simple.py)
+    * [Django](libraries/django/notes.md)
