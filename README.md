@@ -19,3 +19,9 @@
     * [Matplotlib](libraries/matplotlib/matplotlib.py)
     * [Numpy](libraries/numpy/demo.py)
     * [Django](libraries/django/demo.md)
+
+![Numpy Array Slicing](libraries/numpy/array_slicing.png)
+
+![Numpy Arrays to/from Files](libraries/numpy/arrays_files.png)
+
+![Numpy Fancy Indexing](libraries/numpy/fancy_indexing.png)
