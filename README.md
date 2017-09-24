@@ -16,5 +16,6 @@
     * [Web Crawler](example_programs/web_crawler.py)
     * [Word Frequency Counter](example_programs/word_freq_counter.py)
  * Libraries
-    * [Matplotlib](libraries/matplotlib/simple.py)
-    * [Django](libraries/django/notes.md)
+    * [Matplotlib](libraries/matplotlib/matplotlib.py)
+    * [Numpy](libraries/numpy/demo.py)
+    * [Django](libraries/django/demo.md)
