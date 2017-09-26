@@ -1,5 +1,5 @@
 # Contents
- * [Basics](hello.py)
+ * [Basics](basics.ipynb)
  * [Lists & Tuples](lists_tuples.py)
  * [Conditions & Loops](conditions_loops.py)
  * [Functions](functions.py)
@@ -16,12 +16,12 @@
     * [Web Crawler](example_programs/web_crawler.py)
     * [Word Frequency Counter](example_programs/word_freq_counter.py)
  * Libraries
+    * [Django](libraries/django/demo.md)
     * [Matplotlib](libraries/matplotlib/matplotlib.py)
     * [Numpy](libraries/numpy/demo.py)
-    * [Django](libraries/django/demo.md)
 
-![Numpy Array Slicing](libraries/numpy/array_slicing.png)
+<img src="libraries/numpy/arrays_files.png" alt="Numpy Arrays to/from Files" style="width: 800px;"/>
 
-![Numpy Arrays to/from Files](libraries/numpy/arrays_files.png)
+<img src="libraries/numpy/array_slicing.png" alt="Array Slicing" style="width: 600px;"/>
 
-![Numpy Fancy Indexing](libraries/numpy/fancy_indexing.png)
+<img src="libraries/numpy/fancy_indexing.png" alt="Numpy Fancy Indexing" style="width: 700px;"/>
