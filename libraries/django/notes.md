@@ -64,12 +64,17 @@ class Album(models.Model):
     genre = models.CharField(max_length=40)
     album_logo = models.CharField(max_length=1000) 
 
+    # equivalent to toString() in Java
+    def __str__(self):
+        return self.album_title + " - " + self.artist
+
 # each song is linked to an album
 class Song(models.Model):
     # whenever the album is deleted, this song is also deleted (CASCADE)
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
+    file_type = models.CharField(max_length=10)
+    song_title = models.CharField(max_length=150)
 ```
-
 ## Updating the Settings File
 ### music/apps.py
 ```python
@@ -93,12 +98,69 @@ INSTALLED_APPS = [
 # ...
 ```
 
-### migrate models for the app
+## Migrating models for the app
 ```sh
 python manage.py makemigrations music
 python manage.py migrate
 ```
 
+## Using the server shell
+Run the server shelll
+```sh
+python manage.py shell
+```
+
+Create and insert an object to the database:
+```python
+from music.models import Album, Song
+
+# create a new album object and save it to the database
+a = Album(artist="Taylor Swift", album_title="Red", genre="Country", album_logo="https://github.com/utkuufuk/alpha-beta-chess/blob/master/chess.png")
+a.save()
+
+# check the new object's primary key in database
+a.id
+
+# retrieve Album objects from database
+Album.objects.all()
+Album.objects.filter(id=1)
+Album.objects.filter(artist__startswith="Taylor")
+
+# exit shell
+exit()
+```
+
+## Creating an admin user
+```sh
+python manage.py createsuperuser
+```
+
+## Managing databases from admin page
+### music/admin.py
+```python
+from django.contrib import admin
+from .models import Album
+
+admin.site.register(Album)
+```
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
